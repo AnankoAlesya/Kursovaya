@@ -1,0 +1,5 @@
+C:\Users\Alesya\source\repos\kursovaya\kursovaya\obj\Debug\net5.0\kursovaya.csproj.AssemblyReference.cache
+C:\Users\Alesya\source\repos\kursovaya\kursovaya\obj\Debug\net5.0\kursovaya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alesya\source\repos\kursovaya\kursovaya\obj\Debug\net5.0\kursovaya.AssemblyInfoInputs.cache
+C:\Users\Alesya\source\repos\kursovaya\kursovaya\obj\Debug\net5.0\kursovaya.AssemblyInfo.cs
+C:\Users\Alesya\source\repos\kursovaya\kursovaya\obj\Debug\net5.0\kursovaya.csproj.CoreCompileInputs.cache
