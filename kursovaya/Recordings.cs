@@ -15,7 +15,16 @@ namespace kursovaya
                            //вывод соответствующего сообщения, если книга не сдана вовремя
                            //проверка на корректный ввод дат, типа дата возврата >  даты взятия,
                            //если  дата возврата < даты взятия - поменять их местами
-
+        public static void Is_Data_Valide(DateTime taking_book, DateTime returning_book)
+        {
+            if (returning_book < taking_book)
+            {
+                DateTime time = taking_book;
+                taking_book = returning_book;
+                returning_book = time;
+            }
+        }
+        
         public Recordings(DateTime taking_book, DateTime returning_book, Books book)
         {
             this.taking_book = taking_book;

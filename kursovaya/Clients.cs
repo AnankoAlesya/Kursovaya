@@ -8,8 +8,8 @@ namespace kursovaya
 {
     public enum Roles
     {
-        Students,
-        Teachers
+        STUDENT,
+        TEACHER
     }
     class Clients:Human
     {
@@ -27,7 +27,13 @@ namespace kursovaya
             get { return carta; }
             set { carta = value; }
         }
-
+        public static bool Dolg(Roles role, DateTime returning_book, DateTime taking_book)
+        {
+            TimeSpan interval = returning_book.Subtract(taking_book);
+            if (role == Roles.STUDENT && interval.Days > 30) return false;
+            else if (role == Roles.TEACHER && interval.Days > 365) return false;
+            return true;
+        }
 
         public override string ToString()
         {

@@ -24,6 +24,11 @@ namespace kursovaya
         {
             get { return surname; }
         }
+        public static bool Is_Name_or_Surname_Valide(string name, string surname)
+        {
+            if (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(surname) )return false;
+            return true;
+        }
 
         public override string ToString()
         {

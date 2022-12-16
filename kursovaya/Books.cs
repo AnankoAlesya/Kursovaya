@@ -25,6 +25,12 @@ namespace kursovaya
             this.number_of_copies = number_of_copies;
             this.is_available = true;
         }
+        public static bool Is_Book_Inf_Valide(string name, string author, int number_of_copies)
+        {
+            if (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(author)) return false;
+            else if (number_of_copies <= 0) return false;
+            return true;
+        }
         public bool Is_avaible
         {
             get { return is_available; }
